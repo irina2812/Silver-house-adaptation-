@@ -1,0 +1,78 @@
+@import url(font.css);
+:root {
+    --bg-gray: #F0F0F0;
+    /* font color */
+    --gray: #8C8A8A;
+    --blue: #4581B7;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'roboto';
+}
+
+.container  {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    outline: 1px solid red;
+}
+
+/* header  */
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0 30px;
+}
+
+.header-logo {
+    max-width: 120px;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    padding-top: 79px;    
+}
+
+.navbar-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.navbar-list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--gray);
+}
+
+.nav-btn {
+    display: flex;
+    
+}
+/* navbar end */
+/* header end */
+
+/* media */
+@media (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .navbar {
+        width: fit-content;
+    }
+}
+@media (max-width: 768px) {}
+@media (max-width: 576px) {}
+@media (max-width: 480px) {}
+@media (max-width: 420px) {}
